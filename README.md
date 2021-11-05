@@ -5,3 +5,6 @@ Add-Migration InitialCarrierEntities -context {{ContextName}} -OutputDir "Migrat
 Update-database -context {{ContextName}}
   
 Remove-Migration -context {{ContextName}}
+
+Script generation
+Script-Migration -Idempotent -Context {{ContextName}}
