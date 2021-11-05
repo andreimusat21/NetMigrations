@@ -1,7 +1,7 @@
 # NetMigrations
 
-Add-Migration InitialCarrierEntities -context <<ContextName>> -OutputDir "Migrations/Read"
+Add-Migration InitialCarrierEntities -context {{ContextName}} -OutputDir "Migrations/Read"
 
-Update-database -context <<ContextName>>
+Update-database -context {{ContextName}}
   
-Remove-Migration -context <<ContextName>>
+Remove-Migration -context {{ContextName}}
